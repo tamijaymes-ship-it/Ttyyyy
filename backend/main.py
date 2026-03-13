@@ -100,4 +100,5 @@ async def websocket_stress(websocket: WebSocket):
         pass
     except Exception as e:
         await websocket.send_json({"error": str(e)})
+
         await websocket.close()
